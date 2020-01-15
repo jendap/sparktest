@@ -50,19 +50,19 @@
 		<jdk.version>11</jdk.version>
 		<character.encoding>UTF-8</character.encoding>
 
-		<scala.version>2.12.9</scala.version>
+		<scala.version>2.12.10</scala.version>
 		<scala.compat.version>2.12</scala.compat.version>
 
-<!--		<jackson.version>2.9.9</jackson.version>-->
-		<jackson.version>2.10.1</jackson.version>
+		<jackson.version>2.10.2</jackson.version>
 <!--		<janino.version>3.1.0</janino.version>-->
 		<janino.version>3.0.15</janino.version>
 		<logback.version>1.2.3</logback.version>
-		<scalatest.version>3.0.8</scalatest.version>
-		<slf4j.version>1.7.29</slf4j.version>
+		<scalatest.version>3.1.0</scalatest.version>
+		<slf4j.version>1.7.30</slf4j.version>
+<!--		<spark.version>3.0.0-preview2</spark.version>-->
 		<spark.version>2.4.4</spark.version>
 		<spark-streaming-kafka.version>1.6.3</spark-streaming-kafka.version>
-		<spring-boot.version>2.2.1.RELEASE</spring-boot.version>
+		<spring-boot.version>2.2.2.RELEASE</spring-boot.version>
 	</properties>
 
 	<dependencyManagement>
@@ -163,11 +163,16 @@
 			<!-- spring -->
 			<dependency>
 				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-dependencies</artifactId>
+				<artifactId>spring-boot-starter</artifactId>
 				<version>${spring-boot.version}</version>
-				<type>pom</type>
-				<scope>import</scope>
 			</dependency>
+<!--			<dependency>-->
+<!--				<groupId>org.springframework.boot</groupId>-->
+<!--				<artifactId>spring-boot-dependencies</artifactId>-->
+<!--				<version>${spring-boot.version}</version>-->
+<!--				<type>pom</type>-->
+<!--				<scope>import</scope>-->
+<!--			</dependency>-->
 
 			<!-- test -->
 			<dependency>

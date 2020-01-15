@@ -16,14 +16,19 @@
 <!--		<avro4s.version>3.0.4</avro4s.version>-->
 		<avro4s.version>2.0.4</avro4s.version>
 		<calcite.version>1.21.0</calcite.version>
-		<classgraph.version>4.8.53</classgraph.version>
+		<classgraph.version>4.8.60</classgraph.version>
+		<datasketches.version>1.1.0-incubating</datasketches.version>
 		<deequ.version>0.666</deequ.version>
 <!--		<deequ.version>1.0.2</deequ.version>-->
+		<delta.version>0.5.0</delta.version>
 		<frameless.version>0.8.0</frameless.version>
-		<partiql.version>0.1.0</partiql.version>
-		<prestosql.version>324</prestosql.version>
+		<hdrhistogram.version>2.1.12</hdrhistogram.version>
+		<hudi.version>0.5.0-incubating</hudi.version>
+		<iceberg.version>0.7.0-incubating</iceberg.version>
+		<partiql.version>0.1.2</partiql.version>
+		<prestosql.version>328</prestosql.version>
 		<tensorflow.version>1.15.0</tensorflow.version>
-		<zetasql.version>2019.10.1</zetasql.version>
+		<zetasql.version>2019.12.1</zetasql.version>
 	</properties>
 
 	<dependencies>
@@ -117,12 +122,29 @@
 		<dependency>
 			<groupId>io.delta</groupId>
 			<artifactId>delta-core_${scala.compat.version}</artifactId>
-			<version>0.4.0</version>
+			<version>${delta.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.hudi</groupId>
+			<artifactId>hudi-spark</artifactId>
+			<version>${hudi.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.iceberg</groupId>
 			<artifactId>iceberg-spark</artifactId>
-			<version>0.7.0-incubating</version>
+			<version>${iceberg.version}</version>
+		</dependency>
+
+		<!-- datasketches -->
+		<dependency>
+			<groupId>org.apache.datasketches</groupId>
+			<artifactId>datasketches-java</artifactId>
+			<version>${datasketches.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hdrhistogram</groupId>
+			<artifactId>HdrHistogram</artifactId>
+			<version>${hdrhistogram.version}</version>
 		</dependency>
 
 		<!-- avro -->
