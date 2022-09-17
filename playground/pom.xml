@@ -15,7 +15,7 @@
 		<avro.version>1.8.2</avro.version>
 <!--		<avro4s.version>3.0.4</avro4s.version>-->
 		<avro4s.version>2.0.4</avro4s.version>
-		<calcite.version>1.21.0</calcite.version>
+		<calcite.version>1.32.0</calcite.version>
 		<classgraph.version>4.8.60</classgraph.version>
 		<datasketches.version>1.1.0-incubating</datasketches.version>
 		<deequ.version>0.666</deequ.version>
