@@ -12,7 +12,7 @@
 		<main.class>com.janprach.sparktest.playground.SparkTestApp</main.class>
 
 <!--		<avro.version>1.9.1</avro.version>-->
-		<avro.version>1.8.2</avro.version>
+		<avro.version>1.11.3</avro.version>
 <!--		<avro4s.version>3.0.4</avro4s.version>-->
 		<avro4s.version>2.0.4</avro4s.version>
 		<calcite.version>1.21.0</calcite.version>
